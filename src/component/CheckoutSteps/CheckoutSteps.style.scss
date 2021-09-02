@@ -1,0 +1,67 @@
+.CheckoutSteps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--secondary-base-color);
+    height: 110px;
+
+    .Step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Circle {
+            background-color: var(--primary-base-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            line-height: 37px;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .Title {
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+
+    .StepDisabled {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Circle {
+            background-color: darkgray;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            line-height: 37px;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .Title {
+            color: darkgray;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+
+.StepWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.Divider {
+    flex-grow: 1;
+    height: 8px;
+    background-color: var(--primary-base-color);
+}
